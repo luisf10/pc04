@@ -1,0 +1,85 @@
+
+    
+    <!-- content -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Contáctenos</h1>
+                <p class="text-center"> Para cualquier duda o consulta acerca
+                    de nuestros productos, puede contactárnos rellenando el siguiente formulario
+                </p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 custom-container">
+                <h2 class="text-center">Formulario</h2>
+                <form (ngSubmit)="agregarContacto()" id="formulario">
+                    <div class="form-group">
+                      <label for="idContacto">ID:</label>
+                      <input type="text" class="form-control" id="idContacto" name="id" [(ngModel)]="id" required>
+                      <br>
+                    </div>
+                    <div class="form-group">
+                      <label for="idNombre">Nombre:</label>
+                      <input type="text" class="form-control" id="idNombre" name="nombre" [(ngModel)]="nombre" required>
+                      <br>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="idNombre">Dirección:</label>
+                      <input type="text" class="form-control" id="idDireccion" name="direccion" [(ngModel)]="direccion" required>
+                      <br>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                      <label for="idCorreo">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="idCorreo" name="correo" [(ngModel)]="correo" required>
+                      <br>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="idNombre">Teléfono:</label>
+                      <input type="text" class="form-control" id="idTelefono" name="telefono" [(ngModel)]="telefono" required>
+                      <br>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+
+                  
+
+            </div>
+        </div>
+
+        <div class="row">
+          <br>
+                  <br>
+                  <table class="table table-stripped">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Dirección</th>
+                        <th>Correo Electrónico</th>
+                        <th>Teléfono</th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr *ngFor="let contacto of contactenos">
+                        <td>{{contacto.id}}</td>
+                        <td>{{contacto.nombre}}</td>
+                        <td>{{contacto.direccion}}</td>
+                        <td>{{contacto.correo}}</td>
+                        <td>{{contacto.telefono}}</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+        </div>
+        
+      </div>
+

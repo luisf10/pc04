@@ -1,0 +1,64 @@
+<!-- <h1>Menu de navegacion</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a routerLink="/sobremi" routerLinkActive="active-link" class="nav-link">Sobre mi</a>
+    <a routerLink="/computerbot" routerLinkActive="active-link" class="nav-link">Computerbot</a>
+
+    <a routerLink="/productos-gamers" routerLinkActive="active-link" class="nav-link">Gamers</a>
+</nav> -->
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <img class="left-image" src="../assets/image/logo-cjava.png" alt="Imagen Izquierda">
+      <span style="display: inline-block; width: 100px;"></span>
+      <a class="navbar-brand" href="#">COMPUTERBOT</a>
+      <span style="display: inline-block; width: 500px;"></span>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/sobremi">Sobre mí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/computerbot">Computerbot</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/productos-gamers">Gamers</a></li>
+              <li><a class="dropdown-item" routerLink="/productos-pcs">PCs</a></li>
+              <li><a class="dropdown-item" routerLink="/productos-otros">Otros</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactenos">contactenos</a>
+          </li>
+          
+        </ul>
+      </div>
+      <img class="right-image" src="../assets/image/carrito.png" alt="carrito">
+    </div>
+  </nav>
+
+  <!-- slider -->
+  
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/image/gamer_c.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/pc_c.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/otros_c.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>

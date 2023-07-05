@@ -1,0 +1,34 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1{
+    color: #55A1B9;
+  }
+  .content {
+    flex: 1;
+  }
+  
+  
+  footer {
+  background-color:#8F84AE; /* Color de fondo morado */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 50px;
+  }
+  
+  
+  .custom-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom:50px;
+    padding-top: 50px;
+    padding-bottom:20px;
+    /*border:2px solid #ccc;*/
+    background-image: linear-gradient(to bottom, #8F84AE, #c39bd3);
+  }
+  
+  
